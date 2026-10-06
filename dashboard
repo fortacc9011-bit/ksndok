@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FGR — Overview</title>
+  <link rel="icon" href="/brand-logo.png" type="image/png" />
+  <meta name="csrf-token" content="6V0RmSdPYWvkon1dDD6NSpKKxVFaA8jvaHKS1BhlBBJAsqiy8pL6hyolPQs43YtP" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@400;700;900&display=swap" />
+  <link rel="stylesheet" href="/assets/css/style.css?v=20260930c" />
+</head>
+<body>
+  
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="/" class="logo"><img src="/brand-logo.png" alt="FGR"></a>
+      <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Collapse sidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-title">Home</div>
+        <a class="nav-item active" href="/dashboard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          <span>Overview</span>
+        </a>
+        <a class="nav-item " href="/profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Profile</span>
+        </a>
+        <a class="nav-item " href="/download">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>DownLoad</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Reset</div>
+        <a class="nav-item " href="/reset">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          <span>Reset</span>
+        </a>
+      </div>
+
+      
+    </nav>
+
+    <div class="sidebar-footer">
+      
+      <a class="sidebar-user" href="/profile" title="View profile">
+        <div class="avatar"><img src="https://cdn.discordapp.com/avatars/1498876971034349599/47d78663286632136d099b1723ae97b9.png?size=64" alt="" class="avatar-img" /></div>
+        <div class="sidebar-user-meta">
+          <div class="sidebar-user-name">skullman</div>
+          
+            <div class="sidebar-user-role">Member</div>
+          
+        </div>
+      </a>
+      <form method="post" action="/logout">
+        <input type="hidden" name="csrfmiddlewaretoken" value="6V0RmSdPYWvkon1dDD6NSpKKxVFaA8jvaHKS1BhlBBJAsqiy8pL6hyolPQs43YtP">
+        <button type="submit" class="linklike sidebar-logout">Logout</button>
+      </form>
+    </div>
+  </aside>
+
+  <main class="app-main">
+    
+    
+
+  <div class="dashboard-overview">
+    <header class="page-head page-head--compact">
+      <div>
+        <div class="stat-label">Dashboard</div>
+        <h2 class="dash-greeting dash-greeting--compact">Hello, <span>skullman</span></h2>
+      </div>
+      
+        <div class="sub-badge badge-none">NO PLAN</div>
+      
+    </header>
+
+    <style nonce="7c8907410d51d993115880b10c0e7ca6">
+      .progress-fill-w {
+        width:0%;
+      }
+    </style>
+
+    <div class="stats-grid stats-grid--dash">
+      <div class="card card-glow stat-card stat-card--compact">
+        <div class="stat-label">Subscription Plan</div>
+        <div class="stat-value stat-value--compact">NONE</div>
+        <div class="progress-bar progress-bar--compact">
+          <div class="progress-fill progress-fill-w"></div>
+        </div>
+      </div>
+
+      <div class="card card-glow stat-card stat-card--compact">
+        <div class="stat-label">Days Remaining</div>
+        <div class="stat-value stat-value--compact stat-value--lg">
+          —
+        </div>
+      </div>
+
+      <div class="card card-glow stat-card stat-card--compact">
+        <div class="stat-label">Expires On</div>
+        <div class="stat-value stat-value--compact stat-value--sm">
+          —
+        </div>
+      </div>
+
+      <div class="card card-glow stat-card stat-card--compact">
+        <div class="stat-label">Member Since</div>
+        <div class="stat-value stat-value--compact stat-value--sm">Oct 6, 2026</div>
+      </div>
+
+      <div class="card card-glow stat-card stat-card--compact">
+        <div class="stat-label">Injections</div>
+        <div class="stat-value stat-value--compact stat-value--lg">0</div>
+      </div>
+    </div>
+
+    <section class="dash-server-history" aria-labelledby="dash-server-history-title">
+      <div class="dash-server-history-head">
+        <h3 class="dash-server-history-title" id="dash-server-history-title">Server History</h3>
+      </div>
+      <div class="card card-glow dash-server-history-panel">
+        <div class="dash-server-history-table" role="table">
+          <div class="dash-server-history-row dash-server-history-row--head" role="row">
+            <div class="dash-server-history-cell dash-server-history-cell--server" role="columnheader">Server</div>
+            <div class="dash-server-history-cell dash-server-history-cell--players" role="columnheader">Players</div>
+            <div class="dash-server-history-cell dash-server-history-cell--joined" role="columnheader">Last Joined</div>
+          </div>
+          
+            <div class="dash-server-history-empty">No server activity recorded yet.</div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  </main>
+</div>
+
+  
+  <script src="/assets/js/util.js?v=20260923c"></script>
+  <script src="/assets/js/sidebar.js" defer></script>
+  <script src="/assets/js/nav-prefetch.js?v=20260924a" defer></script>
+  
+  
+  <script nonce="7c8907410d51d993115880b10c0e7ca6">
+  (function () {
+    function showPageMessages() {
+      if (window.FGR && typeof FGR.flushDjangoMessages === 'function') {
+        FGR.flushDjangoMessages();
+      }
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(showPageMessages, 0);
+      });
+    } else {
+      setTimeout(showPageMessages, 0);
+    }
+  })();
+  </script>
+
+<script nonce="7c8907410d51d993115880b10c0e7ca6">(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.nonce='7c8907410d51d993115880b10c0e7ca6';d.innerHTML="window.__CF$cv$params={r:'a461e056ff03da31',t:'MTc5MTI2MDQ1NQ=='};var a=document.createElement('script');a.nonce='7c8907410d51d993115880b10c0e7ca6';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" nonce="7c8907410d51d993115880b10c0e7ca6" data-cf-beacon='{"version":"2024.11.0","token":"82690e091d9e4617b2bab4187ace0809","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
